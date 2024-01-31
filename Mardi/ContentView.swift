@@ -13,7 +13,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+                .symbolEffect(.pulse)
+
+            HStack {
+                Text("Hello, world!")
+                Spacer()
+                Text("I'm here!")
+                
+            }
+            
+            Spacer()
         }
         .padding()
     }

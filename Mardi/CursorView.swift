@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct CursorView: View {
+    @Binding var cursor: Double
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Slider(value: $cursor)
     }
 }
 
-#Preview {
-    CursorView()
-}
+//#Preview {
+//    CursorView()
+//}
