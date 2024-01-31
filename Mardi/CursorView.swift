@@ -15,6 +15,6 @@ struct CursorView: View {
     }
 }
 
-//#Preview {
-//    CursorView()
-//}
+#Preview {
+    CursorView(cursor: .constant(0.5))
+}
