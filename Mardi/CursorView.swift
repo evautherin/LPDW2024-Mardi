@@ -11,7 +11,11 @@ struct CursorView: View {
     @Binding var cursor: Double
     
     var body: some View {
-        Slider(value: $cursor)
+        VStack {
+            Text("\(cursor)")
+            Slider(value: $cursor)
+        }
+        .padding()
     }
 }
 
